@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato • Connexta</title>
+    <meta name="description" content="Fale com a Connexta. Vamos conversar sobre inovação aberta na sua empresa.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Satoshi:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="shortcut icon" href="../img/Logo - Connexta.png" type="image/x-icon">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="container">
+            <h2 class="logo">Connexta</h2>
+            <div class="nav-links">
+                <a href="../index.html">Sobre</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="cases.html">Cases</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="blog.html">Blog</a>
+                <a href="contato.html" class="active">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Vamos conversar?</h1>
+            <p>Preencha o formulário ou fale direto pelo WhatsApp. Retornamos em até 2 horas úteis.</p>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Formulário -->
+                <div class="contact-form" data-aos="fade-right">
+                    <form action="https://formspree.io/f/xblrjykl" method="POST">
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                        <input type="email" name="email" placeholder="E-mail corporativo" required>
+                        <input type="text" name="empresa" placeholder="Nome da empresa" required>
+                        <input type="tel" name="telefone" placeholder="Telefone / WhatsApp">
+                        <textarea name="mensagem" rows="6" placeholder="Conte sobre seu desafio ou interesse em parceria..." required></textarea>
+                        <button type="submit" class="btn">Enviar mensagem</button>
+                    </form>
+                </div>
+
+                <!-- Informações + WhatsApp -->
+                <div class="contact-info" data-aos="fade-left">
+                    <h2>Outras formas de falar com a gente</h2>
+                    
+                    <div class="info-item">
+                        <strong>E-mail</strong>
+                        <p>connexta@gmail.com</p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>WhatsApp</strong>
+                        <p><a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-link">
+                            (11) 9 9999-9999 <span>Falar agora</span>
+                        </a></p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Endereço</strong>
+                        <p>São Paulo – SP<br>Av. Paulista, 1374 – Conj. 12</p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Horário de atendimento</strong>
+                        <p>Segunda a sexta<br>9h às 18h</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Connexta • Todos os direitos reservados</p>
+        <p>contato@connexta.com.br</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/contato.js"></script>
+</body>
+</html>

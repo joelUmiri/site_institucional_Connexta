@@ -3,141 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexta • Conexões que Transformam Negócios</title>
-    <meta name="description" content="Conectamos empresas consolidadas e startups para inovação aberta, investimentos estratégicos e impacto real alinhado ao ODS 9 da ONU.">
-    
-    <!-- Fonts -->
+    <title>Connexta • Sobre Nós</title>
+    <meta name="description" content="Conheça a Connexta: empresa de inovação aberta que conecta corporações e startups com foco no ODS 9 da ONU.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Satoshi:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <style>
-        :root {
-            --bg: #131418;
-            --card: #191B1F;
-            --text: #D0D0D0;
-            --title: #FFFFFF;
-            --accent: #FF007F;
-            --accent-hover: #e00070;
-            --border: #2A2D33;
-        }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); overflow-x:hidden; }
-
-        /* Scrollbar rosa */
-        ::-webkit-scrollbar { width:12px; }
-        ::-webkit-scrollbar-track { background:var(--bg); }
-        ::-webkit-scrollbar-thumb { background:var(--accent); border-radius:6px; border:3px solid var(--bg); }
-        ::-webkit-scrollbar-thumb:hover { background:#ff3399; }
-
-        /* Navegação */
-        nav { position:fixed; top:0; width:100%; background:transparent; padding:30px 0; z-index:1000; transition:all .4s; }
-        nav.scrolled { background:rgba(25,27,31,.95); backdrop-filter:blur(15px); padding:18px 0; border-bottom:1px solid var(--border); }
-        nav .container { max-width:1300px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:0 40px; }
-        nav a { color:white; text-decoration:none; margin-left:35px; font-weight:500; font-size:1.1rem; transition:.3s; }
-        nav a:hover { color:var(--accent); }
-
-        /* Hero */
-        #hero { height:100vh; position:relative; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; }
-        #particles-js { position:absolute; width:100%; height:100%; background:linear-gradient(135deg,#131418,#1a1c20); }
-        .hero-content { position:relative; z-index:2; max-width:1100px; padding:0 20px; pointer-events:none; }
-        .hero-content * { pointer-events:auto; }
-        .hero-content h1 {
-            font-family:'Satoshi',sans-serif; font-size:6rem; font-weight:900; letter-spacing:-3px;
-            background:linear-gradient(90deg,#fff,#FF007F,#ff3399,#fff,#FF007F);
-            background-size:300%; -webkit-background-clip:text; background-clip:text;
-            -webkit-text-fill-color:transparent; animation:gradientFlow 10s ease infinite;
-            margin-bottom:24px;
-        }
-        @keyframes gradientFlow { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
-        .hero-content p { font-size:1.5rem; color:#e0e0e0; max-width:800px; margin:0 auto 50px; line-height:1.6; }
-        .btn {
-            background:var(--accent); color:white; border:none; padding:18px 50px; border-radius:50px;
-            font-weight:600; font-size:1.15rem; cursor:pointer; transition:all .3s;
-            box-shadow:0 10px 30px rgba(255,0,127,.3);
-        }
-        .btn:hover { background:var(--accent-hover); transform:translateY(-4px) scale(1.05); }
-
-        /* Seções genéricas */
-        .container { max-width:1300px; margin:0 auto; padding:0 40px; }
-        section { padding:140px 0; }
-        .section-title {
-            text-align:center; font-family:'Satoshi',sans-serif; font-size:3.5rem; color:var(--title);
-            margin-bottom:90px;
-        }
-        .section-title span { color:var(--accent); }
-
-        .cards-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:35px; }
-        .card {
-            background:var(--card); border:1px solid var(--border); border-radius:24px;
-            padding:45px; transition:all .5s;
-        }
-        .card:hover { transform:translateY(-20px); border-color:var(--accent); box-shadow:0 30px 60px rgba(255,0,127,.2); }
-        .card h3 { font-size:1.8rem; color:white; margin-bottom:16px; }
-
-        footer {
-            text-align:center; padding:100px 20px; color:#888; border-top:1px solid var(--border);
-        }
-        footer a { color:var(--accent); text-decoration:none; }
-
-        @media (max-width:768px) {
-            .hero-content h1 { font-size:3.6rem; }
-            nav .container { flex-direction:column; gap:15px; padding:0 20px; }
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="../img/Logo - Connexta.png" type="image/x-icon">
 </head>
 <body>
 
-    <!-- Navegação -->
     <nav id="navbar">
         <div class="container">
-            <h2 style="color:white; font-family:'Satoshi'; font-weight:900;">Connexta</h2>
-            <div>
-                <a href="#hero">Home</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="servicos.html">Serviços</a>
-                <a href="cases.html">Cases</a>
-                <a href="equipe.html">Equipe</a>
-                <a href="blog.html">Blog</a>
-                <a href="contato.html">Contato</a>
+            <h2 class="logo">Connexta</h2>
+            <div class="nav-links">
+                <a href="index.html" class="active">Sobre</a>
+                <a href="html/servicos.html">Serviços</a>
+                <a href="html/cases.html">Cases</a>
+                <a href="html/equipe.html">Equipe</a>
+                <a href="html/blog.html">Blog</a>
+                <a href="html/contato.html">Contato</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section id="hero">
+    <section class="hero">
         <div id="particles-js"></div>
-        <div class="hero-content" data-aos="fade-up">
-            <h1>Conexões que Transformam Negócios</h1>
-            <p>Conectamos empresas consolidadas e startups para inovação aberta, investimentos estratégicos e impacto real alinhado ao ODS 9 da ONU.</p>
-            <a href="contato.html" class="btn">Fale com um especialista</a>
+        <div class="hero-content">
+            <h1>Sobre a Connexta</h1>
+            <p>Conectamos empresas consolidadas e startups para criar inovação real, investimentos estratégicos e impacto alinhado ao ODS 9 da ONU.</p>
+            <a href="html/contato.html" class="btn">Fale com a gente</a>
         </div>
     </section>
 
-    <!-- Preview rápido dos serviços -->
-    <section style="background:#0f1114;">
+    <section class="about-section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">O que <span>fazemos</span></h2>
-            <div class="cards-grid">
-                <div class="card" data-aos="fade-up" data-aos-delay="100"><h3>Matchmaking Estratégico</h3><p>Encontramos a startup perfeita para o seu desafio.</p></div>
-                <div class="card" data-aos="fade-up" data-aos-delay="200"><h3>Corporate Venture</h3><p>Estruturamos programas de inovação aberta dentro da sua empresa.</p></div>
-                <div class="card" data-aos="fade-up" data-aos-delay="300"><h3>Investimento Facilitado</h3><p>Rodadas com coinvestimento corporativo.</p></div>
+            <div class="grid-3">
+                <div class="value-card" data-aos="fade-up">
+                    <h3>Missão</h3>
+                    <p>Ser a ponte mais eficiente entre grandes empresas e startups, gerando parcerias que transformam negócios e aceleram o futuro sustentável.</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Visão</h3>
+                    <p>Um Brasil onde toda empresa consolidada tenha pelo menos uma parceria ativa com startup até 2030.</p>
+                </div>
+                <div class="value-card" data-fup" data-aos-delay="200">
+                    <h3>Valores</h3>
+                    <ul>
+                        <li>Transparência total</li>
+                        <li>Impacto real</li>
+                        <li>Conexões genuínas</li>
+                        <li>ODS 9 em tudo que fazemos</li>
+                    </ul>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section class="ods-section">
+        <div class="container">
+            <h2 class="section-title">Compromisso com o <span>ODS 9</span></h2>
+            <p class="ods-text">Todos os nossos projetos contribuem diretamente para a construção de infraestrutura resiliente, promoção da industrialização inclusiva e sustentável e incentivo à inovação.</p>
         </div>
     </section>
 
     <footer>
         <p>© 2025 Connexta • Todos os direitos reservados</p>
-        <p><a href="privacidade.html">Política de Privacidade</a> • contato@connexta.com.br</p>
+        <p>contato@connexta.com.br</p>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        particlesJS('particles-js', { particles:{ number:{value:90}, color:{value:"#FF007F"}, opacity:{value:.5,random:true}, size:{value:3,random:true}, line_linked:{enable:true,distance:140,color:"#FF007F",opacity:.25,width:1}, move:{enable:true,speed:2} }, interactivity:{ events:{ onhover:{enable:true,mode:"repulse"} } }, retina_detect:true });
-        AOS.init({duration:1000,once:true});
-        window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>100));
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
